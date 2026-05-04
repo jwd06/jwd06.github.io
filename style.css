@@ -13,20 +13,18 @@ header{
     top: 2rem;
     left: 50%;
     transform: translateX(-50%);
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
-    color: white;
+    justify-content: space-between;
+    color: #FFFFFF;
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     z-index: 1000;
 }
 
 .logo{
-    color: antiquewhite;
+    color: #133336;
     font-size: 1.3rem;
     font-weight: 600;
     text-wrap: nowrap;
@@ -44,7 +42,7 @@ header{
 
 li a{
     position: relative;
-    color: antiquewhite;
+    color: #133336;
     font-weight: 300;
     white-space: nowrap;
 }
@@ -58,9 +56,9 @@ li a::before{
     top: 25px; 
     border-radius: 1rem; 
     transition: 0.3s ease-in-out;
-    background: #FFA17F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00223E, #FFA17F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00223E, #FFA17F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #367D8A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #285F6B, #367D8A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #285F6B, #367D8A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -75,13 +73,13 @@ li a:hover::before{
     border: none;
     font-weight: 500;
     font-size: 1rem;
-    color: aliceblue;
+    color: #FFFFFF;
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: #FFA17F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00223E, #FFA17F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00223E, #FFA17F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #367D8A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #285F6B, #367D8A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #285F6B, #367D8A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -92,29 +90,30 @@ li a:hover::before{
     border: none;
     font-weight: 500;
     font-size: 1rem;
-    color: aliceblue;
+    color: #FFFFFF;
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: #FFA17F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00223E, #FFA17F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00223E, #FFA17F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #367D8A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #285F6B, #367D8A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #285F6B, #367D8A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .github:hover{
-    background: linear-gradient(to right, #FFA17F, #00223E);
+    background: linear-gradient(to right, #367D8A, #285F6B);
     transform: scale(1.03);
 }
 
 .linkedin:hover{
-    background: linear-gradient(to right, #FFA17F, #00223E);
+    background: linear-gradient(to right, #367D8A, #285F6B);
     transform: scale(1.03);
 }
 
 #menu-icon{
     font-size: 2rem;
     display: none;
+    color: #367D8A;
 }
 
 section{
@@ -139,8 +138,8 @@ section{
 }
 
 .about img{
-    width: 28vw;
-    height: 28vw;
+    width: 30vw;
+    height: 40vw;
     border-radius: 50%;
 }
 
@@ -165,7 +164,7 @@ section{
 }
 
 .info-box span{
-    background: linear-gradient(to right, #00223E, #FFA17F);
+    background: linear-gradient(to right, #285F6B, #367D8A);
     background-clip: text;
     color: transparent;
     font-size: 1.8rem;
@@ -182,7 +181,7 @@ section{
     color: inherit;
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
-    border: 2px solid black;
+    border: 2px solid #010001;
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
@@ -190,8 +189,8 @@ section{
 }
 
 .btn:hover{
-    background-color: black;
-    color: aliceblue;
+    background-color: #010001;
+    color: #FFFFFF;
 }
 
 .socials{
@@ -235,14 +234,14 @@ section{
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid black;
+    border: 2px solid #010001;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 .projects-card:hover{
-    background-color: black;
+    background-color: #010001;
     color: white;
     transform: translateY(-10px)scale(1.02);
 }
@@ -261,7 +260,7 @@ section{
 .projects-card .btn:hover{
     border: 2px solid white;
     background-color: white;
-    color: black;
+    color: #010001;
 }
 
 .projects-card h3{
@@ -285,20 +284,27 @@ section{
     gap: 1rem;
     font-size: 1.8rem;
     font-weight: 500;
-    color: black;
-    border: 2px solid black;
+    color: #010001;
+    border: 2px solid #010001;
     padding: 1rem 2.5rem;
     border-radius: 3rem;
     transition: 0.3s ease-in-out;
+    max-width: 100%;
+    word-break: break-all;
 }
 
 .email-link:hover{
-    background-color: black;
+    background-color: #010001;
     color: white;
 }
 
 .email-link i{
     font-size: 1.8rem;
+}
+
+.contact-socials{
+    display: flex;
+    gap: 1rem;
 }
 
 footer{
@@ -321,7 +327,7 @@ footer ul{
 }
 
 footer ul li a{
-    color: black;
+    color: #010001;
     font-weight: 600;
 }
 
@@ -358,10 +364,6 @@ footer ul li a{
         grid-template-columns: repeat(1,1fr);
     }
 
-    .github, .linkedin{
-        display: none;
-    }
-
     .about img{
         width: 55vw;
         height: 55vw;
@@ -369,6 +371,19 @@ footer ul li a{
 
     .section-title{
         font-size: 2rem;
+    }
+
+    .info-box{
+        margin-top: 3rem;
+    }
+
+    .email-link{
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .email-link i{
+        font-size: 1.2rem;
     }
 
 }
@@ -387,13 +402,16 @@ footer ul li a{
         color: white;
         flex-direction: column;
         text-align: center;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(19, 51, 54, 0.9);
         border-radius: 1.5rem;
         display: none;
     }
     .nav-links li{
         margin-top: 1.5rem;
         padding: 1rem;
+    }
+    .nav-links li a{
+        color: #FFFFFF;
     }
     .nav-links.active{
         display: flex;
@@ -410,7 +428,21 @@ footer ul li a{
         width: 80vw;
         height: 80vw;
     }
+    .info-box{
+        margin-top: 5rem;
+    }
+
     footer ul{
         gap: 1rem;
+    }
+
+    .email-link{
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .email-link i{
+        font-size: 0.9rem;
     }
 }
