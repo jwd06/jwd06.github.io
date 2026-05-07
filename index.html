@@ -9,141 +9,166 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
 </head>
 <body>
-    <header class ="header">
-        <a href="#" class="logo"><span>Jawad Hossain</span></a>
 
-        <ul class ="nav-links">
-            <li>
-                <a href="#about">About Me</a>
-            </li>
+    <header class="header">
+        <div class="nav-logo">
+            <span class="logo-badge">&lt;/&gt;</span>
+            <span class="logo-name">Jawad Hossain</span>
+        </div>
 
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact Info</a>
-            </li>
-
+        <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
+        <a href="../assets/Jawad_Hossain_Resume.pdf" download class="nav-cta">Download resume</a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="assets/image.jpeg" alt="">
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Jawad Hossain</h1>
-                    <span>Student at Toronto Metropolitant University</span>
-                </div>
-
-                <div class="btn-group">
-                    <a href="assets/Jawad_Hossain_Resume.pdf" download class="btn">Download Resume</a>
-                    <a href="#contact" class="btn">Contact</a>
-                </div>
-
-                <div class="socials">
-                    <a href="https://github.com/jwd06" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/jawad-hossain-78268b377" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
-                </div>
-
-
+    <section id="about" class="hero">
+        <div class="hero-left">
+            <div class="hero-eyebrow"><span class="green-dot"></span>Available for internships · Toronto, CA</div>
+            <h1 class="hero-h1">Jawad<br><em>Hossain</em></h1>
+            <p class="hero-role">Aspiring Cybersecurity Engineer · TMU</p>
+            <div class="hero-divider"></div>
+            <p class="hero-bio">Passionate about protecting systems and uncovering vulnerabilities. I build hands-on security tools — from password analyzers to network monitors — and I'm actively looking for internship opportunities in cybersecurity.</p>
+            <div class="tag-row">
+                <span class="tag tag-py">Python</span>
+                <span class="tag tag-java">Java</span>
+                <span class="tag tag-linux">Linux</span>
+                <span class="tag tag-net">Networking</span>
+            </div>
+            <div class="btn-row">
+                <button class="btn-primary" id="view-projects-btn">View projects ↓</button>
+                <button class="btn-secondary" id="contact-btn">Contact me</button>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/jwd06" target="_blank">GitHub · jwd06</a>
+                <a href="https://www.linkedin.com/in/jawad-hossain-78268b377" target="_blank">LinkedIn · jawad-hossain</a>
             </div>
         </div>
 
+        <div class="hero-right">
+            <div class="photo-area">
+                <img src="../assets/image.jpeg" alt="Jawad Hossain" class="avatar-photo">
+                <div class="avatar-info">
+                    <h3>Jawad Hossain</h3>
+                    <p>Computer Science · TMU</p>
+                    <div class="avail-badge"><span class="green-dot"></span>Open to internships</div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-num">4</div><div class="stat-lbl">Projects built</div></div>
+                <div class="stat-card"><div class="stat-num">2</div><div class="stat-lbl">Languages</div></div>
+                <div class="stat-card"><div class="stat-num">3+</div><div class="stat-lbl">Security tools</div></div>
+                <div class="stat-card"><div class="stat-num">∞</div><div class="stat-lbl">Curiosity</div></div>
+            </div>
+            <div class="code-snip">
+                <span class="cm"># who am i?</span><br>
+                <span class="kw">print</span>(<span class="str">"Jawad Hossain"</span>)<br>
+                <span class="kw">print</span>(<span class="str">"CyberSec · TMU · 2025"</span>)<br>
+                <span class="cm"># always learning 🔐</span>
+            </div>
+        </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title">Recent Projects</h2>
+        <p class="section-eyebrow">// recent work</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">Hands-on security tools built from scratch. Each project tackles a real-world security concept.</p>
+
         <div class="projects-grid">
 
-            <div class="projects-card">
-                <img src="assets/project-1.jpeg" alt="">
-                <h3>Password Analyzer & Generator</h3>
-                <p>
-                    A Python tool that analyzes password strength and generates secure, uncrackable passwords based on core security principles.
-                </p>
-                <div class="btn-group">
-                    <a href="https://github.com/jwd06/Password-Strength-Analyzer-and-Generator-Python" class="btn" target="_blank">Github Repo</a>
+            <div class="proj-card">
+                <div class="proj-card-top" style="background:#0F3460"></div>
+                <div class="proj-card-body">
+                    <div class="proj-header">
+                        <div class="proj-name">Password Analyzer &amp; Generator</div>
+                        <span class="lang-badge lang-py">Python</span>
+                    </div>
+                    <p class="proj-desc">Analyzes password strength and generates secure, uncrackable passwords based on core security principles and entropy scoring.</p>
+                    <div class="proj-footer">
+                        <a class="proj-gh" href="https://github.com/jwd06/Password-Strength-Analyzer-and-Generator-Python" target="_blank">→ GitHub repo</a>
+                        <div class="proj-icon" style="background:#16213E;color:#c9d8f0">🔐</div>
+                    </div>
                 </div>
             </div>
 
-
-            <div class="projects-card">
-                <img src="assets/project-2.jpeg" alt="">
-                <h3>Phishing URL Detector</h3>
-                <p>
-                    Phishing URL detection CLI — analyzes URLs for brand impersonation, suspicious TLDs, domain entropy, and more using a weighted heuristic scoring system.
-                </p>
-                <div class="btn-group">
-                    <a href="https://github.com/jwd06/Phishing-URL-Detector" class="btn" target="_blank">Github Repo</a>
+            <div class="proj-card">
+                <div class="proj-card-top" style="background:#533483"></div>
+                <div class="proj-card-body">
+                    <div class="proj-header">
+                        <div class="proj-name">Phishing URL Detector</div>
+                        <span class="lang-badge lang-py">Python</span>
+                    </div>
+                    <p class="proj-desc">CLI tool that analyzes URLs for brand impersonation, suspicious TLDs, domain entropy, and more using a weighted heuristic scoring system.</p>
+                    <div class="proj-footer">
+                        <a class="proj-gh" href="https://github.com/jwd06/Phishing-URL-Detector" target="_blank">→ GitHub repo</a>
+                        <div class="proj-icon" style="background:#1A1A2E;color:#a99de0">🎣</div>
+                    </div>
                 </div>
             </div>
 
-
-            <div class="projects-card">
-                <img src="assets/project-3.jpeg" alt="">
-                <h3>Caesar Cipher </h3>
-                <p>
-                    A command-line Java program that encrypts and decrypts messages using the Caesar cipher — a classic substitution cipher that shifts each letter in a message by a fixed number of positions in the alphabet. Non-alphabetic characters (spaces, punctuation) are preserved.
-                </p>
-                <div class="btn-group">
-                    <a href="https://github.com/jwd06/Caesar-Cipher" class="btn" target="_blank">Github Repo</a>
+            <div class="proj-card">
+                <div class="proj-card-top" style="background:#633806"></div>
+                <div class="proj-card-body">
+                    <div class="proj-header">
+                        <div class="proj-name">Caesar Cipher</div>
+                        <span class="lang-badge lang-java">Java</span>
+                    </div>
+                    <p class="proj-desc">Command-line program that encrypts and decrypts messages using the Caesar cipher — a classic substitution cipher. Non-alphabetic characters are preserved.</p>
+                    <div class="proj-footer">
+                        <a class="proj-gh" href="https://github.com/jwd06/Caesar-Cipher" target="_blank">→ GitHub repo</a>
+                        <div class="proj-icon" style="background:#FAEEDA;color:#633806">🔑</div>
+                    </div>
                 </div>
             </div>
 
-
-            <div class="projects-card">
-                <img src="assets/project-4.jpeg" alt="">
-                <h3>Network Monitor</h3>
-                <p>
-                    A lightweight Python tool that monitors active network connections in real time, logs traffic snapshots, and detects sudden spikes in activity.
-                </p>
-                <div class="btn-group">
-                    <a href="https://github.com/jwd06/Network-Monitor" class="btn" target="_blank">Github Repo</a>
+            <div class="proj-card">
+                <div class="proj-card-top" style="background:#0F6E56"></div>
+                <div class="proj-card-body">
+                    <div class="proj-header">
+                        <div class="proj-name">Network Monitor</div>
+                        <span class="lang-badge lang-py">Python</span>
+                    </div>
+                    <p class="proj-desc">Lightweight tool that monitors active network connections in real time, logs traffic snapshots, and detects sudden spikes in activity.</p>
+                    <div class="proj-footer">
+                        <a class="proj-gh" href="https://github.com/jwd06/Network-Monitor" target="_blank">→ GitHub repo</a>
+                        <div class="proj-icon" style="background:#E1F5EE;color:#085041">🌐</div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <div class="contact-box">
-            <h2 class="section-title">Contact Me</h2>
-            <a href="mailto:jawadhossain3015@gmail.com" class="email-link">
-                <i class="fa-solid fa-envelope"></i>
-                jawadhossain3015@gmail.com
-            </a>
-            <div class="contact-socials">
-                <a href="https://github.com/jwd06" class="github" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/jawad-hossain-78268b377" class="linkedin" target="_blank">LinkedIn</a>
+        <p class="section-eyebrow">// get in touch</p>
+        <h2 class="section-title">Contact me</h2>
+        <p class="contact-sub">Open to internship opportunities, collaborations, or just a conversation about cybersecurity.</p>
+        <div class="contact-card">
+            <a class="email-link" href="mailto:jawadhossain3015@gmail.com">jawadhossain3015@gmail.com</a>
+            <div class="contact-links">
+                <a class="contact-link gh-link" href="https://github.com/jwd06" target="_blank">GitHub</a>
+                <a class="contact-link li-link" href="https://www.linkedin.com/in/jawad-hossain-78268b377" target="_blank">LinkedIn</a>
             </div>
         </div>
     </section>
 
-    <footer>
-
-        <ul>
-            <li>
-                <a href="#about">About Me</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact Me</a>
-            </li>
+    <footer class="footer">
+        <div class="footer-logo">
+            <span class="logo-badge" style="font-size:10px">&lt;/&gt;</span>
+            <span class="footer-name">Jawad Hossain</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
-        <p class="copyright">© All Rights Reserved To Jawad Hossain</p>
+        <p class="footer-copy">© All rights reserved · Jawad Hossain</p>
     </footer>
 
     <script src="script.js"></script>
