@@ -197,10 +197,14 @@ body {
     border-radius: 20px;
 }
 
+.hero-eyebrow i, .avatar-info i { margin-right: 4px; }
+
 .tag-py    { background: #16213E; color: #c9d8f0; }
 .tag-java  { background: #FAEEDA; color: #633806; }
 .tag-linux { background: #EAF3DE; color: #27500A; }
 .tag-net   { background: #1A1A2E; color: #a99de0; border: 0.5px solid #533483; }
+.tag-js    { background: #3D3400; color: #F7DF1E; }
+.tag-html  { background: #3D1800; color: #E34F26; }
 
 .btn-row {
     display: flex;
@@ -378,6 +382,21 @@ body {
     line-height: 1.6;
 }
 
+.projects .section-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.projects .section-sub {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 32px;
+    line-height: 1.2;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -406,11 +425,13 @@ body {
 
 .proj-header {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
     margin-bottom: 10px;
-    gap: 8px;
+    gap: 10px;
 }
+
+.proj-header .lang-badge { margin-left: auto; }
 
 .proj-name {
     font-size: 15px;
@@ -430,6 +451,7 @@ body {
 
 .lang-py   { background: #16213E; color: #c9d8f0; }
 .lang-java { background: #FAEEDA; color: #633806; }
+.lang-js   { background: #3D3400; color: #F7DF1E; }
 
 .proj-desc {
     font-size: 13px;
