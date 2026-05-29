@@ -30,8 +30,8 @@
 
     <section id="about" class="hero">
         <div class="hero-left">
-            <div class="hero-eyebrow"><span class="green-dot"></span>Available for internships · Toronto, CA</div>
-            <h1 class="hero-h1">Jawad<br><em>Hossain</em></h1>
+            <div class="hero-eyebrow"><span class="green-dot"></span>Available for internships · <i class="fa-solid fa-location-dot"></i> Toronto, CA</div>
+            <h1 class="hero-h1">Jawad<br><em>Hossain.</em></h1>
             <p class="hero-role">Aspiring Cybersecurity Engineer · TMU</p>
             <div class="hero-divider"></div>
             <p class="hero-bio">Passionate about protecting systems and uncovering vulnerabilities. I build hands-on security tools — from password analyzers to network monitors — and I'm actively looking for internship opportunities in cybersecurity.</p>
@@ -40,6 +40,8 @@
                 <span class="tag tag-java">Java</span>
                 <span class="tag tag-linux">Linux</span>
                 <span class="tag tag-net">Networking</span>
+                <span class="tag tag-js">JavaScript</span>
+                <span class="tag tag-html">HTML</span>
             </div>
             <div class="btn-row">
                 <button class="btn-primary" id="view-projects-btn">View projects ↓</button>
@@ -56,13 +58,13 @@
                 <img src="../assets/image.jpeg" alt="Jawad Hossain" class="avatar-photo">
                 <div class="avatar-info">
                     <h3>Jawad Hossain</h3>
-                    <p>Computer Science · TMU</p>
+                    <p><i class="fa-solid fa-graduation-cap"></i> Computer Science · TMU</p>
                     <div class="avail-badge"><span class="green-dot"></span>Open to internships</div>
                 </div>
             </div>
             <div class="stats-grid">
-                <div class="stat-card"><div class="stat-num">4</div><div class="stat-lbl">Projects built</div></div>
-                <div class="stat-card"><div class="stat-num">2</div><div class="stat-lbl">Languages</div></div>
+                <div class="stat-card"><div class="stat-num">5</div><div class="stat-lbl">Projects built</div></div>
+                <div class="stat-card"><div class="stat-num">4</div><div class="stat-lbl">Languages</div></div>
                 <div class="stat-card"><div class="stat-num">3+</div><div class="stat-lbl">Security tools</div></div>
                 <div class="stat-card"><div class="stat-num">∞</div><div class="stat-lbl">Curiosity</div></div>
             </div>
@@ -78,21 +80,37 @@
     <section id="projects" class="projects">
         <p class="section-eyebrow">// recent work</p>
         <h2 class="section-title">Projects</h2>
-        <p class="section-sub">Hands-on security tools built from scratch. Each project tackles a real-world security concept.</p>
+        <p class="section-sub">Things I have built</p>
 
         <div class="projects-grid">
+
+            <div class="proj-card">
+                <div class="proj-card-top" style="background:#1E3A1E"></div>
+                <div class="proj-card-body">
+                    <div class="proj-header">
+                        <div class="proj-icon" style="background:#1A2E1A;color:#7EC87E">💪</div>
+                        <div class="proj-name">Phalanx</div>
+                        <span class="lang-badge lang-js">JavaScript</span>
+                    </div>
+                    <p class="proj-desc">Full-stack fitness web app that computes your BMR and TDEE, calculates personalized macros (protein, carbs, fat), and provides diabetes-aware macro adjustments tailored to your condition for better daily nutrition. Builds a weekly workout split by muscle group and exports your full training schedule as an ICS file importable into any calendar app.</p>
+                    <div class="proj-footer">
+                        <a class="proj-gh" href="https://github.com/jwd06/Phalanx" target="_blank">→ GitHub repo</a>
+                        <a class="proj-gh" href="https://phalanx-orpin.vercel.app/" target="_blank">→ Live site</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="proj-card">
                 <div class="proj-card-top" style="background:#0F3460"></div>
                 <div class="proj-card-body">
                     <div class="proj-header">
+                        <div class="proj-icon" style="background:#16213E;color:#c9d8f0">🔐</div>
                         <div class="proj-name">Password Analyzer &amp; Generator</div>
                         <span class="lang-badge lang-py">Python</span>
                     </div>
                     <p class="proj-desc">Analyzes password strength and generates secure, uncrackable passwords based on core security principles and entropy scoring.</p>
                     <div class="proj-footer">
                         <a class="proj-gh" href="https://github.com/jwd06/Password-Strength-Analyzer-and-Generator-Python" target="_blank">→ GitHub repo</a>
-                        <div class="proj-icon" style="background:#16213E;color:#c9d8f0">🔐</div>
                     </div>
                 </div>
             </div>
@@ -101,13 +119,13 @@
                 <div class="proj-card-top" style="background:#533483"></div>
                 <div class="proj-card-body">
                     <div class="proj-header">
+                        <div class="proj-icon" style="background:#1A1A2E;color:#a99de0">🎣</div>
                         <div class="proj-name">Phishing URL Detector</div>
                         <span class="lang-badge lang-py">Python</span>
                     </div>
                     <p class="proj-desc">CLI tool that analyzes URLs for brand impersonation, suspicious TLDs, domain entropy, and more using a weighted heuristic scoring system.</p>
                     <div class="proj-footer">
                         <a class="proj-gh" href="https://github.com/jwd06/Phishing-URL-Detector" target="_blank">→ GitHub repo</a>
-                        <div class="proj-icon" style="background:#1A1A2E;color:#a99de0">🎣</div>
                     </div>
                 </div>
             </div>
@@ -116,13 +134,13 @@
                 <div class="proj-card-top" style="background:#633806"></div>
                 <div class="proj-card-body">
                     <div class="proj-header">
+                        <div class="proj-icon" style="background:#FAEEDA;color:#633806">🔑</div>
                         <div class="proj-name">Caesar Cipher</div>
                         <span class="lang-badge lang-java">Java</span>
                     </div>
                     <p class="proj-desc">Command-line program that encrypts and decrypts messages using the Caesar cipher — a classic substitution cipher. Non-alphabetic characters are preserved.</p>
                     <div class="proj-footer">
                         <a class="proj-gh" href="https://github.com/jwd06/Caesar-Cipher" target="_blank">→ GitHub repo</a>
-                        <div class="proj-icon" style="background:#FAEEDA;color:#633806">🔑</div>
                     </div>
                 </div>
             </div>
@@ -131,13 +149,13 @@
                 <div class="proj-card-top" style="background:#0F6E56"></div>
                 <div class="proj-card-body">
                     <div class="proj-header">
+                        <div class="proj-icon" style="background:#E1F5EE;color:#085041">🌐</div>
                         <div class="proj-name">Network Monitor</div>
                         <span class="lang-badge lang-py">Python</span>
                     </div>
                     <p class="proj-desc">Lightweight tool that monitors active network connections in real time, logs traffic snapshots, and detects sudden spikes in activity.</p>
                     <div class="proj-footer">
                         <a class="proj-gh" href="https://github.com/jwd06/Network-Monitor" target="_blank">→ GitHub repo</a>
-                        <div class="proj-icon" style="background:#E1F5EE;color:#085041">🌐</div>
                     </div>
                 </div>
             </div>
