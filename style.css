@@ -853,7 +853,9 @@ ul {
     place-items: center;
     border: 1px solid #aaa;
     border-radius: 99px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
+    line-height: 1;
     transition: color 250ms ease, background 250ms ease, border-color 250ms ease;
 }
 
